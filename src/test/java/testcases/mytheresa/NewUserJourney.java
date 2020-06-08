@@ -71,10 +71,10 @@ public class NewUserJourney {
 	private void logOut(WebDriver driver, MytheresaMyAccountPage map) {
 		// log out
 		// my account page access
-		Actions a = new Actions(driver);// creating Actions class's object to take actions
-		WebElement move = map.myaccountLinkPath();// save the path in one web element variable
-		a.moveToElement(move).build().perform();// code for mouse hover
-		map.logoutPath().click();
+		//Actions a = new Actions(driver);// creating Actions class's object to take actions
+		//WebElement move = map.myaccountLinkPath();// save the path in one web element variable
+		//a.moveToElement(move).build().perform();// code for mouse hover
+		//map.logoutPath().click();
 	}
 
 }
