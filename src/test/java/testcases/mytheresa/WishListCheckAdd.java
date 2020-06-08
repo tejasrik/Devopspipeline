@@ -27,7 +27,30 @@ public class WishListCheckAdd {
 	}
 
 	private MytheresaWishListPage addDeleteItemWishlist(WebDriver driver) {
-	 return true;
+	 	// add item in wish list
+		// My account page access
+		MytheresaMyAccountPage map = new MytheresaMyAccountPage(driver);
+		map.wishListLinkPath().click();
+
+		// wish list page access
+		MytheresaWishListPage mwlp = new MytheresaWishListPage(driver);
+		mwlp.newArrivalListPath().click();
+
+		// New arrival this week page access
+		//MytheresaNewArraivalThisWeekPage mnatwp = new MytheresaNewArraivalThisWeekPage(driver); 
+		//mnatwp.selectAsWishPath().click();
+
+		//if(mnatwp.isSizeExist()) {
+		//	mnatwp.selectSizePath().click();
+		//}
+
+		//mnatwp.addToWishListPath().click();
+		//mnatwp.viewWishListPath().click();
+
+		// delete item from wish list
+		// wish list page access
+		//mwlp.removeOptionPath().click();
+		return mwlp;
 	}
 
 	private void louOut(WebDriver driver, MytheresaWishListPage mwlp) {
