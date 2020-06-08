@@ -27,7 +27,7 @@ public class WishListCheckAdd {
 	}
 
 	private MytheresaWishListPage addDeleteItemWishlist(WebDriver driver) {
-	
+	 return true;
 	}
 
 	private void louOut(WebDriver driver, MytheresaWishListPage mwlp) {
