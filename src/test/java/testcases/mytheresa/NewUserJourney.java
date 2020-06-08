@@ -58,17 +58,6 @@ public class NewUserJourney {
 		mcap.registrationButtonPath().click();
 	}
 
-	private void changePassword(WebDriver driver, MytheresaMyAccountPage map) {
-		map.changePassLinkPath().click();
-
-		// account information page access
-		MytheresaAccountInformationPage aip = new MytheresaAccountInformationPage(driver);
-		aip.currentPassTextPath().sendKeys(USER_PASSWORD);
-		aip.newPassTextPath().sendKeys(USER_NEW_PASSWORD);
-		aip.confirmPassTextPath().sendKeys(USER_NEW_PASSWORD);
-		aip.saveButtonPath().click();
-	}
-
 	private void logOut(WebDriver driver, MytheresaMyAccountPage map) {
 		// log out
 		// my account page access
