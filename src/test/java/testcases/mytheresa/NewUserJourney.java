@@ -39,23 +39,23 @@ public class NewUserJourney {
 	private void createAccount(WebDriver driver) {
 		// account create
 		// homepage's object access
-		MytheresaHomePage mhp = new MytheresaHomePage(driver);
-		mhp.myAccountLinkPath().click();
+		//MytheresaHomePage mhp = new MytheresaHomePage(driver);
+		//mhp.myAccountLinkPath().click();
 
 		// account create page's object access
-		MytheresaCreateAccountPage mcap = new MytheresaCreateAccountPage(driver);
+		//MytheresaCreateAccountPage mcap = new MytheresaCreateAccountPage(driver);
 
-		mcap.genderButtonPath().click();
+		//mcap.genderButtonPath().click();
 
-		Select s = new Select(mcap.academicTitlePath());
-		s.selectByValue("");
+		//Select s = new Select(mcap.academicTitlePath());
+		//s.selectByValue("");
 
-		mcap.firstNamePath().sendKeys(USER_FIRST_NAME);
-		mcap.lastNamePath().sendKeys(USER_LAST_NAME);
-		mcap.emailAddressPath().sendKeys(USER_EMAIL);
-		mcap.passwordPath().sendKeys(USER_PASSWORD);
-		mcap.confirmPasswordPath().sendKeys(USER_PASSWORD);
-		mcap.registrationButtonPath().click();
+		//mcap.firstNamePath().sendKeys(USER_FIRST_NAME);
+		//mcap.lastNamePath().sendKeys(USER_LAST_NAME);
+		//mcap.emailAddressPath().sendKeys(USER_EMAIL);
+		//mcap.passwordPath().sendKeys(USER_PASSWORD);
+		//mcap.confirmPasswordPath().sendKeys(USER_PASSWORD);
+		//mcap.registrationButtonPath().click();
 	}
 
 	private void changePassword(WebDriver driver, MytheresaMyAccountPage map) {
