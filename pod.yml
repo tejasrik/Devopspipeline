@@ -4,7 +4,5 @@ metadata:
   name: java-app
 spec:
   containers:
-   - name: java-app
-     image: sanmodi/jenkins_upload_pipeline:latest
-	 ports: 
-	  -containerPort:8080
+  - name: java-app 
+    image: sanmodi/jenkins_upload_pipeline:latest
