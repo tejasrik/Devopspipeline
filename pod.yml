@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: java-app
+spec:
+  containers:
+   - name: java-app
+     image: sanmodi/jenkins_upload_pipeline:latest
+	 ports: 
+	  -containerPort:8080
