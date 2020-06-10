@@ -19,3 +19,4 @@ spec:
         image: sanmodi/jenkins_upload_pipeline:latest
         ports:
         - containerPort: 8080
+        command: ['sh', '-c', 'echo The app is running! && sleep 10000']
