@@ -13,8 +13,4 @@ resource "aws_s3_bucket" "tf_code" {
   acl    = "private"
 
   force_destroy = true
-
-  tags {
-    Name = "tf_bucket"
-  }
 }
