@@ -1,4 +1,4 @@
-# How to run the Test #
+# How to run the  #
 
 **Prerequisite***
 1. Java environment 
