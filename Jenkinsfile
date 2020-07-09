@@ -1,6 +1,6 @@
 node{
     stage ('Git Checkout'){
-  git'https://github.com/tejasrikDevopspipeline.git'
+  git'https://github.com/tejasrik/Devopspipeline.git'
   
     }
     
