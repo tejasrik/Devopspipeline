@@ -10,12 +10,12 @@ node{
      //batlabel "${mvnHome}/bin/mvn package"
   // bat "${mvnHome}/bin/mvn clean package"
  // bat label: '', script: "${mvnHome}/bin/mvn clean package"
- bat label: '', script: 'mvn clean package'
+ sh label: '', script: 'mvn clean package'
     }
    
    stage('SonarQube Analysis') {
        withSonarQubeEnv() { // You can override the credential to be used
-bat label: '', script: 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.6.0.1398:sonar'
+sh label: '', script: 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.6.0.1398:sonar'
 }
     stage('publish docker'){
     bat label: '', script: 'docker build -t tejasrik/jenkinspipeline .'
